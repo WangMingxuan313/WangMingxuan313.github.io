@@ -36,13 +36,13 @@ img {
 	cursor: pointer;
 }
 #lang-ja {
-	left: 190px;
+	left: 370px;
 }
 #lang-en {
 	left: 280px;
 }
 #lang-zh {
-	left: 370px;
+	left: 190px;
 }
 #scale-zoom {
 	position: absolute;
