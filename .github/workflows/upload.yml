@@ -1,0 +1,26 @@
+name: Upload File
+
+on:
+  repository_dispatch:
+    types: [upload_file]
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Upload file
+      run: |
+        echo "Uploading file ${CLIENT_PAYLOAD_FILENAME}"
+        echo "${CLIENT_PAYLOAD_FILE_CONTENT}" | base64 --decode > uploads/${CLIENT_PAYLOAD_FILENAME}
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "github-actions[bot]@users.noreply.github.com"
+        git add uploads/${CLIENT_PAYLOAD_FILENAME}
+        git commit -m "Upload file ${CLIENT_PAYLOAD_FILENAME}"
+        git push
+      env:
+        CLIENT_PAYLOAD_FILENAME: ${{ github.event.client_payload.filename }}
+        CLIENT_PAYLOAD_FILE_CONTENT: ${{ github.event.client_payload.file_content }}
