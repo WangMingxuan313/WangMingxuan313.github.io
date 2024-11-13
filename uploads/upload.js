@@ -16,7 +16,7 @@ document.getElementById('uploadForm').addEventListener('submit', async function(
         const response = await fetch('https://api.github.com/repos/WangMingxuan313/WangMingxuan313.github.io/dispatches', {
             method: 'POST',
             headers: {
-                'Authorization': 'token YOUR_GITHUB_TOKEN',
+                'Authorization': 'token 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',
                 'Accept': 'application/vnd.github.v3+json',
             },
             body: JSON.stringify({
