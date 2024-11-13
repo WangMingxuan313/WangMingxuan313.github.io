@@ -3,5 +3,5 @@
 ## 目前开放：
 * [历史地图](https://wangmingxuan313.github.io/historymaps/)(仅更新到2019年)
 * [下载站](https://wangmingxuan313.github.io/downloads/)
-* [临时](https://www.123pan.com/s/ezclVv-y5ecv.html)
-### P.S.主站预计在2999年之前上线;历史地图最好用电脑打开,手机上划都划不动(don't ask me that why i know)
+* [东昌府区共青团、少先队 能力评价系统](http://58.57.167.246:20012/)
+### P.S.主站预计在2999年之前上线;
